@@ -11,7 +11,8 @@ docker run --name minio -p 9000:9000 -v data:/data minio/minio server /data
 ```
 docker exec -it minio cat /data/.minio.sys/config/config.json | egrep "(access|secret)_key"
 ```
-Change access key and secret key from the Minio dashboard.
+
+#### Change access key and secret key from the Minio dashboard.
 
 ### Download Velero 1.0.0 Release
 
